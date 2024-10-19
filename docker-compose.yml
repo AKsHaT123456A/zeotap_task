@@ -1,0 +1,44 @@
+version: '3'
+services:
+  # Frontend Client (Vite)
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173" # For Vite development server (hot reload)
+    volumes:
+      - ./client:/app
+    depends_on:
+      - server
+
+  # Node.js Backend Server
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: mongodb://mongo:27017/astengine
+      PORT: 3000
+      CLIENT_ORIGIN: http://localhost:5173 # Client URL for CORS
+      NODE_ENV: development
+    volumes:
+      - ./server:/app
+    restart: unless-stopped # Ensures the server restarts in case of failure
+
+  # MongoDB Database
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    restart: unless-stopped # Ensures MongoDB restarts if stopped
+
+# Define named volumes for MongoDB data persistence
+volumes:
+  mongo-data:
