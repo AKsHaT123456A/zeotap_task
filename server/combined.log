@@ -8,3 +8,15 @@
 {"level":"info","message":"Logger initialized.","timestamp":"2024-10-19T23:41:33.301Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2024-10-19T23:41:33.328Z"}
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-19T23:42:03.340Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:52:49.533Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:52:49.583Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:53:19.580Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:57:56.322Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:57:56.375Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:58:26.368Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:59:04.617Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:59:04.647Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:59:34.647Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T01:00:13.785Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T01:00:13.812Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T01:00:13.825Z"}

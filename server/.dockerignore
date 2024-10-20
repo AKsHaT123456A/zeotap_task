@@ -2,3 +2,7 @@ node_modules
 npm-debug.log
 .DS_Store
 *.test.js
+combined.log
+coverage
+error.log
+.env

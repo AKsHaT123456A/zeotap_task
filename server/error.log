@@ -1,2 +1,5 @@
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-19T23:40:40.279Z"}
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-19T23:42:03.340Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:53:19.580Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:58:26.368Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:59:34.647Z"}
