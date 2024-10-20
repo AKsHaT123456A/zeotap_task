@@ -8,7 +8,7 @@ import RuleSelect from './component/RuleSelect';
 import TestDataInput from './component/RuleDataDisplay';
 import ResultDisplay from './component/ResultDisplay';
 
-const BACKEND_URL = 'http://localhost:3000';
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 
 function App() {
   const [ruleString, setRuleString] = useState('(age > 30 AND department = "Sales") OR (salary > 50000 AND experience > 5)');
@@ -168,7 +168,7 @@ function App() {
 
         <RuleSelect rules={rules} selectedRule={selectedRule} setSelectedRule={handleSelectRule} />
 
-        <TestDataInput data={data} setData={setData} />
+        <TestDataInput data={data} setData={setData} result={result} />
         
         <Button variant="contained" color="secondary" onClick={evaluateRule} fullWidth>
           Evaluate Rule

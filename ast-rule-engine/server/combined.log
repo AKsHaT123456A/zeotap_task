@@ -92,3 +92,188 @@
 {"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T19:55:46.876Z"}
 {"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:55:46.879Z"}
 {"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T19:55:46.880Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:58:05.466Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:58:05.508Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:58:05.524Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T19:58:49.300Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T19:58:49.340Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:01:02.278Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:01:02.287Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:01:04.329Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:01:04.336Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:04:10.757Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:04:10.763Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:04:18.435Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:04:18.439Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:05:12.942Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:05:12.948Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:06:50.972Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:06:50.977Z"}
+{"level":"debug","message":"Updating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T20:07:26.141Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:07:26.141Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:07:26.142Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:07:26.143Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T20:07:26.144Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T20:07:26.144Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:07:26.145Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:07:26.145Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T20:07:26.153Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:08:40.320Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T20:08:40.337Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:08:41.605Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:08:41.605Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:08:41.606Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T20:08:41.607Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T20:08:41.608Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:08:41.609Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:08:41.610Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T20:08:41.611Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T20:08:41.636Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:08:42.971Z"}
+{"level":"debug","message":"Successfully fetched 2 rules","timestamp":"2024-10-20T20:08:42.977Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T20:10:38.778Z"}
+{"level":"debug","message":"Successfully fetched 2 rules","timestamp":"2024-10-20T20:10:38.784Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:11:02.476Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:11:02.477Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:11:02.478Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T20:11:02.479Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T20:11:02.479Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:11:02.480Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:11:02.481Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T20:11:02.482Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T20:11:02.491Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T20:11:14.352Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T20:11:14.357Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T20:11:14.365Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T20:11:20.299Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T20:11:20.301Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T20:11:20.302Z"}
+{"level":"debug","message":"Updating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T20:12:18.925Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:12:18.926Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:12:18.926Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:12:18.927Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T20:12:18.927Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T20:12:18.927Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:12:18.928Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:12:18.930Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T20:12:18.935Z"}
+{"level":"debug","message":"Updating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T20:13:08.484Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:08.484Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:08.484Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:08.485Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T20:13:08.485Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T20:13:08.485Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:08.486Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:13:08.486Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T20:13:08.497Z"}
+{"level":"debug","message":"Updating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T20:13:17.122Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:17.123Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:17.124Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:17.124Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T20:13:17.125Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T20:13:17.125Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T20:13:17.125Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T20:13:17.126Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T20:13:17.130Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:07:05.758Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:07:05.773Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:07:08.088Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:07:08.091Z"}
+{"level":"debug","message":"Updating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:07:52.565Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:07:52.566Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:07:52.566Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:07:52.568Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T21:07:52.568Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T21:07:52.569Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:07:52.569Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:07:52.570Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T21:07:52.574Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:12:01.271Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:12:01.277Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:12:05.353Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:12:05.362Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:12:09.280Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:12:09.289Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:12:14.070Z"}
+{"level":"debug","message":"Successfully fetched 3 rules","timestamp":"2024-10-20T21:12:14.077Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:15.542Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:15.543Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:15.544Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T21:12:15.544Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T21:12:15.545Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:15.545Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:12:15.546Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T21:12:15.546Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T21:12:15.556Z"}
+{"level":"debug","message":"Updating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T21:12:20.537Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:20.538Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:20.538Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:20.539Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T21:12:20.539Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T21:12:20.546Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:20.546Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:12:20.546Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T21:12:20.551Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:12:32.184Z"}
+{"level":"debug","message":"Successfully fetched 4 rules","timestamp":"2024-10-20T21:12:32.187Z"}
+{"level":"debug","message":"Updating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:12:39.838Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:39.839Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:39.839Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:39.840Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T21:12:39.840Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T21:12:39.840Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:12:39.841Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:12:39.843Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T21:12:39.846Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:13:13.262Z"}
+{"level":"debug","message":"Successfully fetched 4 rules","timestamp":"2024-10-20T21:13:13.269Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:15:33.258Z"}
+{"level":"debug","message":"Successfully fetched 4 rules","timestamp":"2024-10-20T21:15:33.267Z"}
+{"level":"debug","message":"Updating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:15:42.591Z"}
+{"level":"debug","message":"Creating rule from string: (age > 10 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:15:42.591Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 10 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:15:42.592Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 10 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:15:42.592Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 10 AND department = \"Sales\")","timestamp":"2024-10-20T21:15:42.592Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 10,department = \"Sales\")","timestamp":"2024-10-20T21:15:42.593Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:15:42.593Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:15:42.593Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T21:15:42.596Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:18:59.240Z"}
+{"level":"debug","message":"Successfully fetched 4 rules","timestamp":"2024-10-20T21:18:59.247Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:04.293Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:04.294Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:04.295Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-20T21:19:04.295Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-20T21:19:04.297Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:04.298Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:19:04.299Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T21:19:04.299Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T21:19:04.305Z"}
+{"level":"debug","message":"Updating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:19:19.098Z"}
+{"level":"debug","message":"Creating rule from string: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:19.098Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:19.099Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 20 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:19.099Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 20 AND department = \"Sales\")","timestamp":"2024-10-20T21:19:19.100Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 20,department = \"Sales\")","timestamp":"2024-10-20T21:19:19.100Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T21:19:19.100Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-20T21:19:19.101Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T21:19:19.107Z"}
+{"level":"debug","message":"Evaluating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:19:34.840Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T21:19:34.849Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T21:19:34.856Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:20:07.268Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-20T21:20:07.273Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:20:11.266Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-20T21:20:11.272Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:21:59.261Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-20T21:21:59.273Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:22:08.256Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-20T21:22:08.282Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T21:22:12.249Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-20T21:22:12.254Z"}
+{"level":"debug","message":"Evaluating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:22:18.044Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T21:22:18.046Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T21:22:18.048Z"}
+{"level":"debug","message":"Evaluating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:22:26.043Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T21:22:26.046Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T21:22:26.047Z"}
