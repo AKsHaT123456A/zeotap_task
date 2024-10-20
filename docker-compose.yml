@@ -4,7 +4,7 @@ services:
   client:
     build:
       context: ./client
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     ports:
       - "5173:5173" # For Vite development server (hot reload)
     volumes:
@@ -16,7 +16,7 @@ services:
   server:
     build:
       context: ./server
-      dockerfile: Dockerfile
+      dockerfile: DockerFile
     ports:
       - "3000:3000"
     depends_on:
