@@ -10,7 +10,8 @@
     "react-dom": "^17.0.0"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
+    "@vitejs/plugin-react-swc": "^3.7.1",
+    "vite": "^5.4.9",
     "vite-plugin-react": "^4.0.0"
   }
 }
