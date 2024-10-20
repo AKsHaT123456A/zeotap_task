@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import helmet from 'helmet';
 import { logError, logInfo } from './utils/logger.ts'; // Import the logger and specific logging functions
-import { config } from './utils/config'; // Import the config
+import { config } from './utils/config.ts'; // Import the config
 
 const app = express();
 
