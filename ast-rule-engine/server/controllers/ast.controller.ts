@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import { Engine, RuleProperties } from 'json-rules-engine';
 import Rule, { IRule } from '../models/ast.model.ts';
-import { logError, logDebug } from '../utils/logger.ts';
+import { logError, logDebug } from '../utils/logger.util.ts';
 import buildConditions from '../helpers/build.helper.ts';
 
 // Function to create rule structure from string

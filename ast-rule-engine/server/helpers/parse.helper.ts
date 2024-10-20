@@ -1,16 +1,11 @@
 // Define types for the parsed condition
-interface ParsedCondition {
-    fact: string;
-    operator: 'greaterThan' | 'lessThan' | 'equal';
-    value: string | number;
-  }
+
+import type { ParsedCondition } from "../utils/type.util";
+import operatorMapping from "../utils/type.util";
+
   
   // Operator mapping for cleaner handling
-  const operatorMapping: Record<string, 'greaterThan' | 'lessThan' | 'equal'> = {
-    '>': 'greaterThan',
-    '<': 'lessThan',
-    '=': 'equal',
-  };
+
   
   /**
    * Function to parse a condition string and return the parsed condition

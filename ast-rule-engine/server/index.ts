@@ -2,8 +2,8 @@ import express, { Request, Response, NextFunction } from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import helmet from 'helmet';
-import { logError, logInfo } from './utils/logger.ts'; // Import the logger and specific logging functions
-import { config } from './utils/config.ts'; // Import the config
+import { logError, logInfo } from './utils/logger.util.ts'; // Import the logger and specific logging functions
+import { config } from './utils/config.util.ts'; // Import the config
 
 const app = express();
 

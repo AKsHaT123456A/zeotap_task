@@ -1,5 +1,5 @@
 import winston from 'winston';
-import { config } from './config.ts';
+import { config } from './config.util.ts';
 // Determine if in development mode
 const isDevelopment = config.isDevelopment;
 

@@ -1,5 +1,5 @@
 import { TopLevelCondition } from "json-rules-engine";
-import { logDebug } from "../utils/logger.ts";
+import { logDebug } from "../utils/logger.util.ts";
 import  parseCondition  from "./parse.helper.ts";
 const buildConditions = (rule: string): TopLevelCondition => {
   logDebug(`Building conditions for rule: ${rule}`);
