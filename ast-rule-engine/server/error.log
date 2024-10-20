@@ -4,3 +4,21 @@
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:58:26.368Z"}
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:59:34.647Z"}
 {"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T12:57:16.448Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T17:54:08.872Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:42:11.770Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:42:22.413Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:43:15.931Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:50:07.090Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:50:35.989Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:54:43.552Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:58:22.947Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T18:59:50.960Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T19:01:51.627Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T19:03:40.235Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T19:06:10.155Z"}
+{"level":"error","message":"Error creating rule: Rule validation failed: ast: AST must contain valid \"conditions\" array and \"event\" object","timestamp":"2024-10-20T19:14:50.296Z"}
+{"level":"error","message":"Error adding rule to engine: \"conditions\" root must contain a single instance of \"all\", \"any\", \"not\", or \"condition\"","timestamp":"2024-10-20T19:15:22.587Z"}
+{"level":"error","message":"Error adding rule to engine: \"conditions\" root must contain a single instance of \"all\", \"any\", \"not\", or \"condition\"","timestamp":"2024-10-20T19:17:20.133Z"}
+{"level":"error","message":"Error evaluating rule: Undefined fact: age","timestamp":"2024-10-20T19:23:41.867Z"}
+{"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:17.501Z"}
+{"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:21.460Z"}

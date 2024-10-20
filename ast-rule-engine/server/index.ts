@@ -4,6 +4,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { logError, logInfo } from './utils/logger.util.ts'; // Import the logger and specific logging functions
 import { config } from './utils/config.util.ts'; // Import the config
+import router from './routes/ast.route.ts';
 
 const app = express();
 
@@ -22,11 +23,15 @@ app.use(
 // Middleware: Parse JSON requests
 app.use(express.json());
 
+
 // Sample route
 app.get('/', (_req: Request, res: Response) => {
   logInfo('GET request to /'); // Log the request
   res.status(200).send('Rule Engine API');
 });
+
+//Routing 
+app.use("/",router);
 
 // MongoDB connection with improved error handling
 mongoose

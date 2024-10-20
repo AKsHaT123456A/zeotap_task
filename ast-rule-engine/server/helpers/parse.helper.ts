@@ -1,7 +1,7 @@
 // Define types for the parsed condition
 
-import type { ParsedCondition } from "../utils/type.util";
-import operatorMapping from "../utils/type.util";
+import type { ParsedCondition } from "../utils/type.util.ts";
+import operatorMapping from "../utils/type.util.ts";
 
   
   // Operator mapping for cleaner handling

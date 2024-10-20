@@ -1,25 +1,94 @@
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-19T23:36:25.342Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-19T23:36:25.378Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-19T23:39:38.510Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-19T23:39:38.536Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-19T23:40:10.249Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-19T23:40:10.273Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-19T23:40:40.279Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-19T23:41:33.301Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-19T23:41:33.328Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-19T23:42:03.340Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:52:49.533Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:52:49.583Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:53:19.580Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:57:56.322Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:57:56.375Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:58:26.368Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T00:59:04.617Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T00:59:04.647Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T00:59:34.647Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T01:00:13.785Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T01:00:13.812Z"}
-{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T01:00:13.825Z"}
-{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T12:56:46.409Z"}
-{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T12:56:46.439Z"}
-{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-20T12:57:16.448Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:36:03.056Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:36:03.121Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:36:03.144Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T19:36:09.233Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-20T19:36:09.252Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:36:12.216Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:36:12.217Z"}
+{"level":"debug","message":"Found 'OR' conditions","timestamp":"2024-10-20T19:36:12.219Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T19:36:12.221Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T19:36:12.245Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:39:56.403Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:39:56.476Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:39:56.506Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T19:40:26.339Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-20T19:40:26.356Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:40:28.148Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:40:28.150Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:40:28.150Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T19:40:28.151Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T19:40:28.202Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:44:00.768Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:44:00.815Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:44:00.830Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T19:44:15.989Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-20T19:44:16.008Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:44:17.497Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:44:17.498Z"}
+{"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:17.501Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:44:21.457Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:44:21.459Z"}
+{"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:21.460Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:46:12.475Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:46:12.524Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:46:12.552Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:46:35.324Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T19:46:35.326Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T19:46:35.385Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:46:54.267Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:46:54.293Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:46:57.424Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:46:57.428Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:46:57.469Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:46:57.475Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:48:05.600Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:48:05.609Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:49:04.857Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:49:04.861Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:49:10.529Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:49:10.608Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:49:10.623Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:49:16.475Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:49:16.485Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:49:16.490Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:50:45.682Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:50:45.770Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:50:45.784Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:51:11.053Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:51:11.092Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:51:11.103Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-20T19:52:12.987Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-20T19:52:13.029Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-20T19:52:13.043Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:52:15.477Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:52:15.489Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T19:52:15.493Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:52:20.211Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:52:20.217Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:52:20.223Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:52:37.201Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:52:37.204Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:52:37.206Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:52:42.354Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:52:42.356Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T19:52:42.358Z"}
+{"level":"debug","message":"Updating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:52:50.627Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:52:50.628Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T19:52:50.638Z"}
+{"level":"debug","message":"Updating rule with ID: 67155e1b2ad857b017e3740c","timestamp":"2024-10-20T19:53:04.345Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:53:04.345Z"}
+{"level":"debug","message":"Rule updated successfully","timestamp":"2024-10-20T19:53:04.348Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-20T19:55:31.826Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-20T19:55:31.830Z"}
+{"level":"debug","message":"Creating rule from string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-20T19:55:33.077Z"}
+{"level":"debug","message":"Rule AST created successfully [object Object]","timestamp":"2024-10-20T19:55:33.078Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-20T19:55:33.133Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T19:55:39.357Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:55:39.360Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:55:39.361Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T19:55:43.772Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:55:43.775Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-20T19:55:43.776Z"}
+{"level":"debug","message":"Evaluating rule with ID: 67156035014939ce1ff79710","timestamp":"2024-10-20T19:55:46.876Z"}
+{"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T19:55:46.879Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T19:55:46.880Z"}

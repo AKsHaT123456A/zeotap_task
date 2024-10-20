@@ -25,7 +25,9 @@ const ruleSchema: Schema<IRule> = new Schema({
     required: [true, 'AST is required'],
     validate: {
       validator: function (value: AST): boolean {
-        return value && Array.isArray(value.conditions) && typeof value.event === 'object' && value.event !== null;
+
+        console.log(`Validating AST: ${JSON.stringify(value)}`);
+        return value && value.conditions && typeof value.event === 'object' && value.event !== null;
       },
       message: 'AST must contain valid "conditions" array and "event" object',
     },

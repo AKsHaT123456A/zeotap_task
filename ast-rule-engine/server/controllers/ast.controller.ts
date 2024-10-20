@@ -2,31 +2,17 @@ import { Request, Response } from 'express';
 import { Engine, RuleProperties } from 'json-rules-engine';
 import Rule, { IRule } from '../models/ast.model.ts';
 import { logError, logDebug } from '../utils/logger.util.ts';
-import buildConditions from '../helpers/build.helper.ts';
+import createRule from '../helpers/create.helper.ts';
 
-// Function to create rule structure from string
-const createRule = (ruleString: string): RuleProperties => {
-  logDebug(`Creating rule from string: ${ruleString}`);
 
-  return {
-    conditions: buildConditions(ruleString),
-    event: {
-      type: 'eligibility',
-      params: {
-        message: 'The user is eligible.',
-      },
-    },
-  };
-};
 
 // Controller for creating a new rule
 export const createNewRule = async (req: Request, res: Response): Promise<void> => {
   const { ruleString }: { ruleString: string } = req.body;
-
+  console.log(ruleString);
   try {
-    logDebug(`Received rule creation request with rule: ${ruleString}`);
     const ast = createRule(ruleString);
-
+    logDebug(`Rule AST created successfully ${ast.event}`);
     const rule: IRule = new Rule({ ruleString, ast });
     await rule.save();
 
@@ -60,7 +46,7 @@ export const evaluateExistingRule = async (req: Request, res: Response): Promise
     }
 
     const engine = new Engine();
-
+    logDebug(`Rule found, adding to engine ${ruleDoc.ast}`);
     try {
       engine.addRule(ruleDoc.ast as unknown as RuleProperties);
     } catch (error: any) {
@@ -70,7 +56,8 @@ export const evaluateExistingRule = async (req: Request, res: Response): Promise
     }
 
     const { events } = await engine.run(data);
-
+    console.log(events);
+    
     if (events.length > 0) {
       logDebug(`User eligible based on the rule`);
       res.json({ eligible: true });
