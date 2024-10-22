@@ -1,20 +1,20 @@
 import { logDebug } from "../utils/logger.util.ts";
-import { Condition } from "../utils/type.util.ts";
+import { Node } from "../utils/type.util.ts";  // Adjust imports for Node type
 import parseCondition from "./parse.helper.ts";
 
-// Define interfaces for the structure of conditions
-
-
-// Convert the buildConditions function to TypeScript
-const buildConditions = (rule: string): Condition => {
-  logDebug(`Building conditions for rule: ${rule.trim()}`); // Log the input rule
+// Function to build conditions into an AST using Node structure
+const buildConditions = (rule: string): Node => {
+  logDebug(`Building conditions for rule: ${rule.trim()}`);
 
   // Handle 'OR' conditions
   const orParts = rule.split(/\sOR\s/i);
   if (orParts.length > 1) {
     logDebug(`Found 'OR' conditions: ${orParts.map(part => part.trim())}`);
     return {
-      any: orParts.map((orPart) => buildConditions(orPart.trim())), // Recursively build conditions for each part
+      type: 'operator',
+      value: 'OR',
+      left: buildConditions(orParts[0].trim()),  // Recursively build the left part
+      right: buildConditions(orParts.slice(1).join(' OR ').trim()),  // Right part with remaining conditions
     };
   }
 
@@ -23,13 +23,22 @@ const buildConditions = (rule: string): Condition => {
   if (andParts.length > 1) {
     logDebug(`Found 'AND' conditions: ${andParts.map(part => part.trim())}`);
     return {
-      all: andParts.map((andPart) => parseCondition(andPart.trim())), // Parse conditions for each part
+      type: 'operator',
+      value: 'AND',
+      left: buildConditions(andParts[0].trim()),  // Recursively build the left part
+      right: buildConditions(andParts.slice(1).join(' AND ').trim()),  // Right part with remaining conditions
     };
   }
 
-  // If no 'AND' or 'OR' found, process as a single condition
+  // Single condition (operand)
   logDebug(`Single condition parsed: ${rule.trim()}`);
-  return { all: [parseCondition(rule.trim())] };
+  const condition = parseCondition(rule.trim());  // Parse the condition
+  return {
+    type: 'operand',
+    value: condition,
+    left: null,
+    right: null,
+  };
 };
 
 export default buildConditions;

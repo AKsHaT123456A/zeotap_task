@@ -22,3 +22,9 @@
 {"level":"error","message":"Error evaluating rule: Undefined fact: age","timestamp":"2024-10-20T19:23:41.867Z"}
 {"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:17.501Z"}
 {"level":"error","message":"Error creating rule: Invalid condition format: age","timestamp":"2024-10-20T19:44:21.460Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-22T19:00:57.992Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:03:17.759Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:35:43.713Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:36:06.122Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:42:52.688Z"}
+{"level":"error","message":"Error adding rule to engine: \"conditions\" root must contain a single instance of \"all\", \"any\", \"not\", or \"condition\"","timestamp":"2024-10-22T19:44:19.747Z"}

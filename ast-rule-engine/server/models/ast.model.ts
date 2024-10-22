@@ -1,16 +1,34 @@
-import mongoose, { Schema, Document, model } from 'mongoose';
+import { Schema, Document, model } from 'mongoose';
+import { Node } from '../utils/type.util';
 
-// Define the shape of the AST (Abstract Syntax Tree)
-interface AST {
-  conditions: any[];
-  event: Record<string, any>;
-}
+
 
 // Interface representing a document in MongoDB for a rule
 export interface IRule extends Document {
   ruleString: string;
-  ast: AST;
+  ast: Node;  // AST structure to represent the rule
 }
+
+// Define the schema for a Node (to represent the AST)
+const nodeSchema: Schema<Node> = new Schema({
+  type: {
+    type: String,
+    required: [true, 'Node type is required'],
+    enum: ['operator', 'operand'],
+  },
+  left: {
+    type: Schema.Types.Mixed, // Allows referencing another node (for operators)
+    default: null,
+  },
+  right: {
+    type: Schema.Types.Mixed, // Allows referencing another node (for operators)
+    default: null,
+  },
+  value: {
+    type: Schema.Types.Mixed, // Stores value (for operands)
+    default: null,
+  },
+}, { _id: false });  // No automatic _id for subdocuments
 
 // Define the Mongoose Schema for the rule
 const ruleSchema: Schema<IRule> = new Schema({
@@ -21,19 +39,35 @@ const ruleSchema: Schema<IRule> = new Schema({
     minlength: [5, 'Rule string must be at least 5 characters long'],
   },
   ast: {
-    type: Object,
+    type: nodeSchema,  // Embed the Node schema for AST
     required: [true, 'AST is required'],
     validate: {
-      validator: function (value: AST): boolean {
-
+      validator: function (value: Node): boolean {
         console.log(`Validating AST: ${JSON.stringify(value)}`);
-        return value && value.conditions && typeof value.event === 'object' && value.event !== null;
+        return validateAST(value);
       },
-      message: 'AST must contain valid "conditions" array and "event" object',
+      message: 'Invalid AST structure',
     },
   },
 });
 
+// Helper function to validate AST structure
+const validateAST = (node: Node): boolean => {
+  if (!node || !node.type) return false;
+  
+  if (node.type === 'operand') {
+    // Ensure the value is present for operands
+    return !!node.value;
+  }
+  
+  if (node.type === 'operator') {
+    // Ensure both left and right children are valid nodes for operators
+    return node.left !== undefined && node.right !== undefined && validateAST(node.left!) && validateAST(node.right!);
+  }
+  
+  return false;
+};
+
 // Export the Mongoose model for the rule
-const Rules = model<IRule>('Rule', ruleSchema);
-export default Rules;
+const Rule = model<IRule>('Rule', ruleSchema);
+export default Rule;

@@ -277,3 +277,290 @@
 {"level":"debug","message":"Evaluating rule with ID: 671563497339bfa073119746","timestamp":"2024-10-20T21:22:26.043Z"}
 {"level":"debug","message":"Rule found, adding to engine [object Object]","timestamp":"2024-10-20T21:22:26.046Z"}
 {"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-20T21:22:26.047Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:00:27.473Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:00:27.994Z"}
+{"level":"error","message":"MongoDB connection error: MongooseServerSelectionError: getaddrinfo ENOTFOUND mongo","timestamp":"2024-10-22T19:00:57.992Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:01:08.726Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:01:08.803Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:01:08.822Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:01:52.002Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:01:52.041Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:01:57.901Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:01:57.904Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:01:57.907Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:01:57.910Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:01:57.912Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:01:57.916Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:01:57.917Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:01:57.919Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:01:57.922Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:01:57.923Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:01:57.925Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:01:57.926Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:01:57.928Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:01:57.929Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:01:57.932Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:01:57.933Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:01:58.020Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717f6a59b0a86f61ae93d7c","timestamp":"2024-10-22T19:03:17.738Z"}
+{"level":"debug","message":"Adding rule to the engine for evaluation","timestamp":"2024-10-22T19:03:17.757Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:03:17.759Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:22:02.195Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:22:02.218Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:22:03.484Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:22:03.486Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:22:03.487Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:22:03.489Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:22:03.490Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:22:03.491Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:22:03.491Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:22:03.493Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:22:03.495Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:22:03.496Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:22:03.497Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:22:03.497Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:22:03.498Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:22:03.499Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:22:03.499Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:22:03.500Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:22:03.549Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:25:42.327Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:25:42.336Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:25:44.269Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:25:44.271Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:25:44.272Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:25:44.274Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:25:44.275Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:25:44.276Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:25:44.277Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:25:44.278Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:25:44.278Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:25:44.279Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:25:44.280Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:25:44.281Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:25:44.281Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:25:44.282Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:25:44.283Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:25:44.283Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:25:44.357Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:27:35.185Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:27:35.194Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:27:36.378Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:27:36.382Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:27:36.383Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:27:36.384Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:27:36.386Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:27:36.387Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:27:36.389Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:27:36.390Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:27:36.392Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:27:36.393Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:27:36.394Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:27:36.395Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:27:36.396Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:27:36.397Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:27:36.398Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:27:36.399Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:27:36.426Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:28:42.864Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:28:42.878Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:28:44.223Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:28:44.224Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:28:44.226Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:28:44.227Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:28:44.228Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:28:44.229Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:28:44.230Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:28:44.230Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:28:44.231Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:28:44.232Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:28:44.233Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:28:44.235Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:28:44.236Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:28:44.237Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:28:44.238Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:28:44.238Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:28:44.261Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:30:01.537Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:30:01.550Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:30:02.765Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:30:02.767Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:30:02.769Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:30:02.771Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:30:02.772Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:30:02.773Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:30:02.775Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:30:02.777Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:30:02.779Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:30:02.780Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:30:02.781Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:30:02.787Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:30:02.789Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:30:02.790Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:30:02.791Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:30:02.794Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:30:02.827Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:31:57.596Z"}
+{"level":"debug","message":"Successfully fetched 0 rules","timestamp":"2024-10-22T19:31:57.606Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:31:58.728Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:31:58.728Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:31:58.729Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:31:58.729Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:31:58.729Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:31:58.729Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:31:58.729Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:31:58.730Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:31:58.730Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:31:58.730Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:31:58.731Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:31:58.733Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:31:58.734Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:31:58.735Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:31:58.735Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:31:58.735Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:31:58.751Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:33:03.473Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:33:03.475Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:33:03.476Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:33:03.477Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:33:03.478Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:33:03.479Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:33:03.480Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:33:03.481Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:33:03.482Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:33:03.483Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:33:03.484Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:33:03.485Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:33:03.486Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:33:03.487Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:33:03.488Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:33:03.489Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:33:03.517Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:11.340Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:11.342Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:11.343Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:34:11.344Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:34:11.345Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:34:11.345Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:34:11.346Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:34:11.347Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:34:11.348Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:11.349Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:34:11.350Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:34:11.350Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:34:11.354Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:34:11.356Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:34:11.357Z"}
+{"level":"debug","message":"AST created successfully: {\"type\":\"operator\",\"left\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"age\",\"operator\":\"greaterThan\",\"value\":30},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"department\",\"operator\":\"equal\",\"value\":\"Sales\"},\"left\":null,\"right\":null}},\"right\":{\"type\":\"operator\",\"value\":\"AND\",\"left\":{\"type\":\"operand\",\"value\":{\"fact\":\"salary\",\"operator\":\"greaterThan\",\"value\":50000},\"left\":null,\"right\":null},\"right\":{\"type\":\"operand\",\"value\":{\"fact\":\"experience\",\"operator\":\"greaterThan\",\"value\":5},\"left\":null,\"right\":null}},\"value\":\"OR\"}","timestamp":"2024-10-22T19:34:11.357Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:34:11.384Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:34:37.049Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:34:37.320Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:34:37.337Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:44.308Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:44.310Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:44.312Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:34:44.314Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:34:44.316Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:34:44.318Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:34:44.319Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:34:44.321Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:34:44.323Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:34:44.324Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:34:44.326Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:34:44.328Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:34:44.330Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:34:44.332Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:34:44.334Z"}
+{"level":"debug","message":"AST created successfully: {\n  \"ast\": {\n    \"type\": \"operator\",\n    \"left\": {\n      \"ast\": {\n        \"type\": \"operator\",\n        \"value\": \"AND\",\n        \"left\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"age\",\n              \"operator\": \"greaterThan\",\n              \"value\": 30\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        },\n        \"right\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"department\",\n              \"operator\": \"equal\",\n              \"value\": \"Sales\"\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        }\n      }\n    },\n    \"right\": {\n      \"ast\": {\n        \"type\": \"operator\",\n        \"value\": \"AND\",\n        \"left\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"salary\",\n              \"operator\": \"greaterThan\",\n              \"value\": 50000\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        },\n        \"right\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"experience\",\n              \"operator\": \"greaterThan\",\n              \"value\": 5\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        }\n      }\n    },\n    \"value\": \"OR\"\n  },\n  \"event\": {\n    \"type\": \"eligibility\",\n    \"params\": {\n      \"message\": \"The user is eligible.\"\n    }\n  }\n}","timestamp":"2024-10-22T19:34:44.356Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:34:44.464Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdef9b0a86f61ae93d91","timestamp":"2024-10-22T19:35:43.676Z"}
+{"level":"debug","message":"Adding rule to the engine for evaluation","timestamp":"2024-10-22T19:35:43.709Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:35:43.713Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdef9b0a86f61ae93d91","timestamp":"2024-10-22T19:36:06.113Z"}
+{"level":"debug","message":"Adding rule to the engine for evaluation","timestamp":"2024-10-22T19:36:06.121Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:36:06.122Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdef9b0a86f61ae93d91","timestamp":"2024-10-22T19:42:52.672Z"}
+{"level":"debug","message":"Adding rule to the engine for evaluation","timestamp":"2024-10-22T19:42:52.686Z"}
+{"level":"error","message":"Error adding rule to engine: Engine: addRule() argument requires \"event\" property","timestamp":"2024-10-22T19:42:52.688Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:43:34.539Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:43:34.638Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:43:34.655Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdef9b0a86f61ae93d91","timestamp":"2024-10-22T19:44:19.707Z"}
+{"level":"debug","message":"Adding rule to the engine for evaluation","timestamp":"2024-10-22T19:44:19.742Z"}
+{"level":"error","message":"Error adding rule to engine: \"conditions\" root must contain a single instance of \"all\", \"any\", \"not\", or \"condition\"","timestamp":"2024-10-22T19:44:19.747Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:48:25.269Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:48:25.358Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:48:25.385Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:48:30.817Z"}
+{"level":"debug","message":"Successfully fetched 4 rules","timestamp":"2024-10-22T19:48:30.856Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:48:34.154Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:48:34.158Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:48:34.160Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:48:34.161Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:48:34.163Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:48:34.165Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:48:34.166Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:48:34.168Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:48:34.169Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:48:34.170Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:48:34.171Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:48:34.173Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:48:34.174Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:48:34.176Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:48:34.177Z"}
+{"level":"debug","message":"AST created successfully: {\n  \"ast\": {\n    \"type\": \"operator\",\n    \"left\": {\n      \"ast\": {\n        \"type\": \"operator\",\n        \"value\": \"AND\",\n        \"left\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"age\",\n              \"operator\": \"greaterThan\",\n              \"value\": 30\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        },\n        \"right\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"department\",\n              \"operator\": \"equal\",\n              \"value\": \"Sales\"\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        }\n      }\n    },\n    \"right\": {\n      \"ast\": {\n        \"type\": \"operator\",\n        \"value\": \"AND\",\n        \"left\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"salary\",\n              \"operator\": \"greaterThan\",\n              \"value\": 50000\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        },\n        \"right\": {\n          \"ast\": {\n            \"type\": \"operand\",\n            \"value\": {\n              \"fact\": \"experience\",\n              \"operator\": \"greaterThan\",\n              \"value\": 5\n            },\n            \"left\": null,\n            \"right\": null\n          }\n        }\n      }\n    },\n    \"value\": \"OR\"\n  },\n  \"event\": {\n    \"type\": \"eligibility\",\n    \"params\": {\n      \"message\": \"The user is eligible.\"\n    }\n  }\n}","timestamp":"2024-10-22T19:48:34.187Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:48:34.262Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:48:40.403Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:48:40.418Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:50:00.522Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:50:00.536Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:51:12.785Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:51:12.790Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:51:19.428Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:51:19.480Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:51:19.502Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:51:21.469Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:51:21.487Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:51:28.353Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:51:28.361Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:51:57.336Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:51:57.341Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:52:08.290Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:52:08.330Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:52:08.355Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:52:10.010Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:52:10.031Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:53:35.643Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:53:35.652Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:53:43.750Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:53:43.828Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:53:43.846Z"}
+{"level":"debug","message":"Evaluating rule with ID: 6717fdae9b0a86f61ae93d8f","timestamp":"2024-10-22T19:53:44.857Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:53:44.881Z"}
+{"level":"info","message":"Logger initialized.","timestamp":"2024-10-22T19:57:01.656Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-10-22T19:57:01.750Z"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2024-10-22T19:57:01.787Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:57:07.282Z"}
+{"level":"debug","message":"Successfully fetched 5 rules","timestamp":"2024-10-22T19:57:07.317Z"}
+{"level":"debug","message":"Creating AST from rule string: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:57:20.476Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\") OR (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:57:20.477Z"}
+{"level":"debug","message":"Found 'OR' conditions: (age > 30 AND department = \"Sales\"),(salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:57:20.478Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30 AND department = \"Sales\")","timestamp":"2024-10-22T19:57:20.479Z"}
+{"level":"debug","message":"Found 'AND' conditions: (age > 30,department = \"Sales\")","timestamp":"2024-10-22T19:57:20.480Z"}
+{"level":"debug","message":"Building conditions for rule: (age > 30","timestamp":"2024-10-22T19:57:20.481Z"}
+{"level":"debug","message":"Single condition parsed: (age > 30","timestamp":"2024-10-22T19:57:20.481Z"}
+{"level":"debug","message":"Building conditions for rule: department = \"Sales\")","timestamp":"2024-10-22T19:57:20.482Z"}
+{"level":"debug","message":"Single condition parsed: department = \"Sales\")","timestamp":"2024-10-22T19:57:20.483Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000 AND experience > 5)","timestamp":"2024-10-22T19:57:20.484Z"}
+{"level":"debug","message":"Found 'AND' conditions: (salary > 50000,experience > 5)","timestamp":"2024-10-22T19:57:20.485Z"}
+{"level":"debug","message":"Building conditions for rule: (salary > 50000","timestamp":"2024-10-22T19:57:20.485Z"}
+{"level":"debug","message":"Single condition parsed: (salary > 50000","timestamp":"2024-10-22T19:57:20.486Z"}
+{"level":"debug","message":"Building conditions for rule: experience > 5)","timestamp":"2024-10-22T19:57:20.486Z"}
+{"level":"debug","message":"Single condition parsed: experience > 5)","timestamp":"2024-10-22T19:57:20.487Z"}
+{"level":"debug","message":"Rule created and saved successfully","timestamp":"2024-10-22T19:57:20.549Z"}
+{"level":"debug","message":"Fetching all rules from the database","timestamp":"2024-10-22T19:57:45.894Z"}
+{"level":"debug","message":"Successfully fetched 1 rules","timestamp":"2024-10-22T19:57:45.901Z"}
+{"level":"debug","message":"Evaluating rule with ID: 671803a051b411f1ce5c6ed3","timestamp":"2024-10-22T19:57:48.760Z"}
+{"level":"debug","message":"User eligible based on the rule","timestamp":"2024-10-22T19:57:48.799Z"}
+{"level":"debug","message":"Evaluating rule with ID: 671803a051b411f1ce5c6ed3","timestamp":"2024-10-22T19:57:57.079Z"}
+{"level":"debug","message":"User not eligible based on the rule","timestamp":"2024-10-22T19:57:57.094Z"}
