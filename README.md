@@ -160,7 +160,3 @@ https://github.com/user-attachments/assets/a3ac03ac-51db-44eb-926c-bfea920fbd67
 
 
 ---
-
-## License
-
-This project is licensed under the MIT License.
