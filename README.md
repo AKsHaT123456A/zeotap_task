@@ -81,7 +81,11 @@ The corresponding AST would look like:
 
 ### Demo
 
-You can watch the demo video for the **AST Rule Engine** [here](#link-to-demo).
+You can watch the demo video for the **AST Rule Engine**.
+
+
+https://github.com/user-attachments/assets/a09c52d5-74bc-489d-86c7-f3970b836803
+
 
 ---
 
@@ -151,7 +155,11 @@ Enter the weather condition for alerts (e.g., Rain, Clear):
 
 ### Demo
 
-You can watch the demo video for the **Weather Monitoring System** [here](#link-to-demo).
+You can watch the demo video for the **Weather Monitoring System**.
+
+
+https://github.com/user-attachments/assets/a3ac03ac-51db-44eb-926c-bfea920fbd67
+
 
 ---
 
