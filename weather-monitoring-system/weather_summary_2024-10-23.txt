@@ -1,0 +1,39 @@
+Daily Weather Summary
+=====================
+
+City: Delhi
+Average Temperature: 26.05000 C
+Max Temperature: 26.05000 C
+Min Temperature: 26.05000 C
+Dominant Condition: Haze
+---------------------
+City: Mumbai
+Average Temperature: 30.99000 C
+Max Temperature: 30.99000 C
+Min Temperature: 30.99000 C
+Dominant Condition: Haze
+---------------------
+City: Chennai
+Average Temperature: 29.99000 C
+Max Temperature: 30.03000 C
+Min Temperature: 29.49000 C
+Dominant Condition: Mist
+---------------------
+City: Bangalore
+Average Temperature: 21.89000 C
+Max Temperature: 22.50000 C
+Min Temperature: 21.29000 C
+Dominant Condition: Rain
+---------------------
+City: Kolkata
+Average Temperature: 25.97000 C
+Max Temperature: 25.97000 C
+Min Temperature: 25.97000 C
+Dominant Condition: Haze
+---------------------
+City: Hyderabad
+Average Temperature: 25.23000 C
+Max Temperature: 25.73000 C
+Min Temperature: 25.23000 C
+Dominant Condition: Haze
+---------------------

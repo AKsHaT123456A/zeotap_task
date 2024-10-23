@@ -8,12 +8,13 @@ export let userThresholds = {
 export let tempUnit = "C"; // Default unit is Celsius
 
 export function askUserPreferences(): Promise<void> {
+  
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
-
   return new Promise((resolve) => {
+    console.log("Please enter your preferences for weather alerts:");
     rl.question(
       "Would you prefer temperature in Celsius (C) or Fahrenheit (F)? ",
       (unit) => {
@@ -22,11 +23,21 @@ export function askUserPreferences(): Promise<void> {
         }
 
         rl.question("Enter the temperature threshold for alerts: ", (temp) => {
-          userThresholds.temperature = parseFloat(temp);
+          const tempNum = parseFloat(temp);
+          if (!isNaN(tempNum)) {
+            userThresholds.temperature = tempNum;
+          } else {
+            console.log("Invalid input. Using default temperature threshold.");
+          }
+
           rl.question(
             "Enter the weather condition for alerts (e.g., Rain, Clear): ",
             (condition) => {
-              userThresholds.condition = condition;
+              if (condition.trim()) {
+                userThresholds.condition = condition;
+              } else {
+                console.log("No input provided. Using default weather condition.");
+              }
               rl.close();
               resolve();
             }

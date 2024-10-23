@@ -184,8 +184,8 @@ const avgTempTrendsConfig: ChartConfiguration<"line"> = {
       __dirname,
       `temperature_summary_${new Date().toISOString().slice(0, 10)}.png`
     );
+    
     fs.writeFileSync(tempFilePath, tempImage);
-    console.log("Temperature chart saved successfully.");
 
     // Render humidity, wind speed, and pressure chart
     const otherMetricsImage = await chartJSNodeCanvas.renderToBuffer(
@@ -196,7 +196,6 @@ const avgTempTrendsConfig: ChartConfiguration<"line"> = {
       `other_metrics_summary_${new Date().toISOString().slice(0, 10)}.png`
     );
     fs.writeFileSync(otherMetricsFilePath, otherMetricsImage);
-    console.log("Humidity, wind speed, and pressure chart saved successfully.");
 
     // Render average temperature trends chart
     const avgTempTrendsImage = await chartJSNodeCanvas.renderToBuffer(avgTempTrendsConfig);
@@ -205,7 +204,6 @@ const avgTempTrendsConfig: ChartConfiguration<"line"> = {
       `avg_temperature_trends_${new Date().toISOString().slice(0, 10)}.png`
     );
     fs.writeFileSync(avgTempTrendsFilePath, avgTempTrendsImage);
-    console.log("Average temperature trends chart saved successfully.");
   } catch (error) {
     console.error("Error generating charts:", error);
   }

@@ -1,7 +1,7 @@
 import axios from "axios";
 import { WeatherData, DailySummary } from "../Interfaces/interfaces.ts";
 import { API_KEY } from "../Config/config.ts";
-import { convertKelvinToCelsius, determineDominantCondition } from "../Utils/utils.ts";
+import { determineDominantCondition } from "../Utils/utils.ts";
 
 export async function fetchWeatherData(city: string): Promise<any> {
   try {

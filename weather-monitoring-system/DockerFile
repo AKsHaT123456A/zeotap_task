@@ -4,7 +4,16 @@ FROM node:18
 # Set working directory inside the container
 WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json to leverage Docker cache for dependencies
+# Install required packages for native modules like canvas
+RUN apt-get update && apt-get install -y \
+    libcairo2-dev \
+    libpango1.0-dev \
+    libjpeg-dev \
+    libgif-dev \
+    librsvg2-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy package.json and package-lock.json to leverage Docker cache for dependencies 
 COPY package*.json ./
 
 # Install Node.js dependencies

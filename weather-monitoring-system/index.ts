@@ -16,9 +16,7 @@ async function storeDailySummary(summary: DailySummary) {
 
 async function startWeatherMonitoring() {
   await client.connect();
-
   await askUserPreferences(); // Get user preferences for temperature unit and thresholds
-
   const getWeather = async () => {
     const dailyWeatherData: WeatherData[] = [];
 
@@ -68,7 +66,6 @@ async function startWeatherMonitoring() {
     }
   };
 
-  // Schedule the weather monitoring job to run at a fixed interval (e.g., every 6 hours)
   schedule.scheduleJob("*/5 * * * * * * *", getWeather);
 
   // Run the monitoring immediately on startup
