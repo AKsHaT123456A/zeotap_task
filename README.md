@@ -27,8 +27,7 @@ The AST (Abstract Syntax Tree) Rule Engine is designed to determine user eligibi
 #### Prerequisites
 
 - Docker
-- Docker Compose
-
+- Node
 #### Running the Application
 
 1. Clone the repository and navigate to the `ast-rule-engine` directory:
@@ -107,8 +106,7 @@ The Weather Monitoring System continuously retrieves real-time weather data from
 #### Prerequisites
 
 - Docker
-- Docker Compose
-- OpenWeatherMap API Key
+- Node
 
 #### Running the Application
 
