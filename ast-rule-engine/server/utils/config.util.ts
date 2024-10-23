@@ -5,7 +5,7 @@ dotenv.config();
 
 // Export configuration values
 export const config = {
-  mongoUri:  'mongodb://localhost:27017/astengine',
+  mongoUri: process.env.MONGO_URI || 'mongodb://localhost:27017/astengine',
   port: parseInt(process.env.PORT || '3000', 10),
   clientOrigin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
   isDevelopment: process.env.NODE_ENV === 'development', // Check if in development mode
