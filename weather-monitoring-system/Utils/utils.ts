@@ -5,7 +5,7 @@ export let userThresholds = {
   condition: "Rain",
 };
 
-export let tempUnit = "C"; // Default unit is Celsius
+export let tempUnit = "C"; 
 
 export function askUserPreferences(): Promise<void> {
   
